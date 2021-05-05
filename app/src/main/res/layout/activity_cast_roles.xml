@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CastRoles">
+
+    <RelativeLayout
+        android:id="@+id/profileBack"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:background="@color/purple_500">
+
+
+        <RelativeLayout
+            android:id="@+id/profileImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/CastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileImg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15sp"
+            android:text="Cast Name"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="403dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="163dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:horizontalSpacing="6dp"
+        android:numColumns="2"
+        android:verticalSpacing="6dp"/>
+
+</RelativeLayout>

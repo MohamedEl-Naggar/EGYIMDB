@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieReviews">
+
+    <RelativeLayout
+        android:id="@+id/profileBack"
+        android:layout_width="match_parent"
+        android:layout_height="257dp"
+        android:background="@color/purple_500">
+
+
+        <RelativeLayout
+            android:id="@+id/profileImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/MovieName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileImg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15sp"
+            android:text="Movie Name"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MovieName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:numStars="5"
+            android:stepSize="0.1" />
+
+        <Button
+            android:id="@+id/submit_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_below="@+id/rating_bar"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/black"
+            android:text="Sumbit Rating"
+            android:textSize="10dp" />
+
+
+        <TextView
+            android:id="@+id/empty_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/MovieName"
+            android:layout_marginBottom="-84dp"
+            android:text="Review Cannot Be Empty"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/duplicate_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/MovieName"
+            android:layout_marginLeft="300dp"
+            android:layout_marginBottom="-82dp"
+            android:text="Duplicate Review"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/write_review"
+        android:layout_width="251dp"
+        android:layout_height="137dp"
+        android:layout_below="@+id/profileBack"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+
+        android:hint="Write your review here."/>
+
+    <Button
+        android:id="@+id/submit_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileBack"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="38dp"
+        android:layout_toRightOf="@+id/write_review"
+        android:text="Submit Review" />
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="403dp"
+        android:layout_height="453dp"
+        android:layout_below="@+id/write_review"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:horizontalSpacing="6dp"
+        android:numColumns="2"
+        android:verticalSpacing="6dp" />
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EGYIMDB</string>
+    <string name="title_activity_signup">SignupActivity</string>
+<!--        <string name="db_url">jdbc:mysql://192.168.1.4:3306/egyimdb</string>-->
+        <string name="db_url">jdbc:mysql://db4free.net:3306/egyimdb</string>
+<!--    <string name="user_name">andro</string>-->
+        <string name="user_name">mohamed_elnaggar</string>
+<!--    <string name="password">andro</string>-->
+    <string name="password">Aabb1122</string>
+
+</resources>
